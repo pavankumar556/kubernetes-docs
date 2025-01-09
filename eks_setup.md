@@ -54,8 +54,8 @@ You can follow same procedure in the official  AWS document [Getting started wit
    --zones <AZ-1>,<AZ-2>
    
    example:
-   eksctl create cluster --name microdegree \
-   --region us-east-1 \
+   eksctl create cluster --name pavan \
+   --region ap-south-1 \
    --node-type t2.small \
     ```
 
