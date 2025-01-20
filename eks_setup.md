@@ -11,7 +11,7 @@ You can follow same procedure in the official  AWS document [Getting started wit
     sudo ./aws/install
     ```
 1. Setup kubectl   
-   a. Download kubectl version 1.29 
+   a. Download kubectl version 1.29
    b. Grant execution permissions to kubectl executable   
    c. Move kubectl onto /usr/local/bin   
    d. Test that your kubectl installation was successful    
@@ -22,7 +22,7 @@ You can follow same procedure in the official  AWS document [Getting started wit
    mv ./kubectl /usr/local/bin 
    kubectl version --client
    ```
-2. Setup eksctl   
+3. Setup eksctl   
    a. Download and extract the latest release   
    b. Move the extracted binary to /usr/local/bin   
    c. Test that your eksclt installation was successful   
@@ -33,7 +33,7 @@ You can follow same procedure in the official  AWS document [Getting started wit
    eksctl version
    ```
   
-3. Create an IAM Role and attache it to EC2 instance    
+4. Create an IAM Role and attache it to EC2 instance    
    `Note: create IAM user with programmatic access if your bootstrap system is outside of AWS`   
    IAM user should have access to   
    IAM   
@@ -41,7 +41,7 @@ You can follow same procedure in the official  AWS document [Getting started wit
    CloudFormation  
    Note: Check eksctl documentaiton for [Minimum IAM policies](https://eksctl.io/usage/minimum-iam-policies/)
 
-4.   ### Once IAM role created attach that IAM Role to ec2 instance###
+5.   ### Once IAM role created attach that IAM Role to ec2 instance###
     Actions--> secuity--> Modify IAM Role
    
 5. Create your cluster and nodes 
